@@ -1,6 +1,10 @@
 #!/usr/bin/env python3
 """One-Liner Marathon entry: writes a single one-line comedy joke to
-/output/entry.txt (or $MAKEFUN_OUTPUT_DIR/entry.txt)."""
+/output/entry.txt (or $MAKEFUN_OUTPUT_DIR/entry.txt).
+
+Joke mechanism: the horoscope's vague advice to "take a risk" is answered
+with the most relatable modern dare -- opening one's banking app.
+"""
 
 import os
 import sys
