@@ -12,6 +12,8 @@ import sys
 JOKE = "My horoscope said to take a risk today, so I opened my banking app."
 
 def main() -> int:
+    if not 1 <= len(JOKE) <= 280:
+        raise SystemExit(f"JOKE must be 1-280 characters (competition gate), got {len(JOKE)}")
     out_dir = os.environ.get("MAKEFUN_OUTPUT_DIR", "/output")
     os.makedirs(out_dir, exist_ok=True)
     path = os.path.join(out_dir, "entry.txt")
